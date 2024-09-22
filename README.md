@@ -1,3 +1,3 @@
 # Drivewise
 
-A compilation of all the code for the website and the IOS associated with Drivewise.
+A compilation of the code for the website and the IOS associated with Drivewise.
