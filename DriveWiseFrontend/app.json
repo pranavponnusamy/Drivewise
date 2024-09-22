@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "DriveWise",
+    "slug": "DriveWise",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hackmit.drivewise",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "NSLocationWhenInUseUsageDescription": "This app requires access to your location when open.",
+      "NSLocationAlwaysAndWhenInUseUsageDescription": "This app requires access to your location even when closed.",
+      "NSLocationAlwaysUsageDescription": "This app requires access to your location when open.",
+      "buildNumber": "20"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.hackmit.drivewise",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "versionCode": 20
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c02f1b60-bbd1-48ab-ae4d-3a3d9ca1c94b"
+      }
+    }
+  }
+}
