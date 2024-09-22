@@ -1,0 +1,27 @@
+.firstContainer {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.contentContainer {
+  margin-top: 60px;
+  width: 1200px;
+}
+
+@media screen and (max-width: 1250px) {
+  .contentContainer {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .contentContainer {
+    width: 100%;
+  }
+}
