@@ -218,7 +218,7 @@ def compute_danger_score(route, G):
     return danger_score
 
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
